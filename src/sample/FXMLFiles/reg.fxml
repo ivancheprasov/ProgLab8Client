@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to top left, #6a5acd, #ff7f50)" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.RegController">
+    <children>
+        <Button fx:id="regButton" layoutX="275.0" layoutY="400.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="250.0" text="Зарегистрироваться">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <Label fx:id="regText" alignment="CENTER" contentDisplay="CENTER" layoutY="14.0" prefHeight="120.0" prefWidth="700.0" text="Регистрация" textAlignment="CENTER" textFill="#c5bf98" AnchorPane.bottomAnchor="266.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="49.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="localeChoiceBox" layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="70.0" style="-fx-background-color:  linear-gradient(to top, lightblue, silver);" />
+        <TextField fx:id="mailText" alignment="CENTER" layoutX="230.0" layoutY="230.0" prefHeight="60.0" prefWidth="340.0" promptText="Введите адрес электронной почты" style="-fx-background-radius: 25;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+      <TextField fx:id="loginText" alignment="CENTER" layoutX="230.0" layoutY="315.0" prefHeight="60.0" prefWidth="340.0" promptText="Введите логин" style="-fx-background-radius: 25;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

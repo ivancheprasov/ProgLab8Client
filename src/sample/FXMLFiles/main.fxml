@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to top left, #6a5acd, #ff7f50)" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MainController">
+    <children>
+        <ChoiceBox fx:id="localeChoiceBox" layoutX="11.0" layoutY="13.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color:  linear-gradient(to top, lightblue, silver);" />
+      <ChoiceBox fx:id="tableChoiceBox" layoutX="167.0" layoutY="14.0" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color:  linear-gradient(to top, lightblue, silver);" />
+      <Button fx:id="exitButton" layoutX="716.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Выйти" />
+      <Text fx:id="loginText" fill="#d7d1a4" layoutX="508.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="my_login" textAlignment="CENTER" wrappingWidth="166.936767578125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="importButton" layoutX="543.0" layoutY="484.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Импорт" />
+      <Button fx:id="informationButton" layoutX="465.0" layoutY="55.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="322.0" text="Информация о коллекции" />
+      <Button fx:id="addButton" layoutX="457.0" layoutY="405.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Добавить" />
+      <Button fx:id="add_if_minButton" layoutX="626.0" layoutY="405.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Добавить меньшее" />
+      <Button fx:id="updateButton" layoutX="457.0" layoutY="442.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Модифицировать" />
+      <Button fx:id="removeButton" layoutX="626.0" layoutY="442.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Удалить" />
+      <Slider fx:id="ySlider" layoutX="493.0" layoutY="374.0" max="370.0" min="35.0" prefHeight="14.0" prefWidth="108.0" />
+      <Slider layoutX="493.0" layoutY="354.0" max="320.0" min="10.0" prefHeight="14.0" prefWidth="108.0" fx:id="xSlider" />
+      <Slider fx:id="costSlider" layoutX="651.0" layoutY="364.0" prefHeight="14.0" prefWidth="108.0" />
+      <TextField fx:id="nameText" layoutX="493.0" layoutY="281.0" prefHeight="26.0" prefWidth="108.0" promptText="Имя" style="-fx-background-radius: 10;" />
+      <RadioButton fx:id="goodRadioButton" layoutX="651.0" layoutY="235.0" mnemonicParsing="false" text="Хорошее" textFill="#d7d1a4" />
+      <RadioButton fx:id="badRadioButton" layoutX="651.0" layoutY="260.0" mnemonicParsing="false" text="Плохое" textFill="#d7d1a4" />
+      <ChoiceBox fx:id="typeChoiceBox" layoutX="493.0" layoutY="237.0" prefHeight="26.0" prefWidth="108.0" />
+      <CheckBox fx:id="openedCheckBox" layoutX="651.0" layoutY="285.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="108.0" text="Открытое" textFill="#d7d1a4" />
+      <Text fx:id="locationText" fill="#d7d1a4" layoutX="463.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Локация: (0;0)" textAlignment="CENTER" wrappingWidth="166.936767578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="cost" fill="#d7d1a4" layoutX="622.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стоимость: 0" textAlignment="CENTER" wrappingWidth="166.936767578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#d7d1a4" layoutX="465.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="28.5367431640625" fx:id="xLocation">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="type" fill="#d7d1a4" layoutX="463.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тип" textAlignment="CENTER" wrappingWidth="166.936767578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="state" fill="#d7d1a4" layoutX="622.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Состояние" textAlignment="CENTER" wrappingWidth="166.936767578125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="informationText" layoutX="465.0" layoutY="95.0" prefHeight="90.0" prefWidth="322.0" style="-fx-background-color: lightgoldenrodyellow;" />
+      <Text fx:id="yLocation" fill="#d7d1a4" layoutX="465.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y" textAlignment="CENTER" wrappingWidth="28.5367431640625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="11.0" layoutY="95.0" prefHeight="417.0" prefWidth="431.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="72.0" text="Имя" />
+          <TableColumn fx:id="typeColumn" prefWidth="58.0" text="Тип" />
+            <TableColumn fx:id="stateColumn" prefWidth="70.0" text="Состояние" />
+            <TableColumn fx:id="costColumn" prefWidth="47.0" text="Цена" />
+            <TableColumn prefWidth="33.0" text="Х" fx:id="xColumn" />
+            <TableColumn fx:id="yColumn" prefWidth="33.0" text="Y" />
+            <TableColumn fx:id="dateColumn" prefWidth="61.0" text="Дата" />
+            <TableColumn fx:id="optionalColumn" prefWidth="56.0" text="Доп." />
+        </columns>
+      </TableView>
+      <Canvas fx:id="canvas" height="454.0" layoutX="11.0" layoutY="57.0" width="431.0" />
+      <TextField fx:id="nameFilter" layoutX="11.0" layoutY="55.0" prefHeight="27.0" prefWidth="72.0" promptText="Имя" />
+      <ChoiceBox fx:id="typeFilter" layoutX="83.0" layoutY="55.0" prefHeight="26.0" prefWidth="58.0" />
+      <ChoiceBox fx:id="stateFilter" layoutX="141.0" layoutY="55.0" prefHeight="26.0" prefWidth="70.0" />
+      <TextField fx:id="costFilter" layoutX="211.0" layoutY="55.0" prefHeight="27.0" prefWidth="47.0" promptText="Цена" />
+      <TextField layoutX="258.0" layoutY="55.0" prefHeight="27.0" prefWidth="33.0" promptText="X" fx:id="xFilter" />
+      <TextField fx:id="yFilter" layoutX="292.0" layoutY="55.0" prefHeight="27.0" prefWidth="33.0" promptText="Y" />
+      <TextField fx:id="dateFilter" layoutX="326.0" layoutY="55.0" prefHeight="27.0" prefWidth="61.0" promptText="Дата" />
+      <TextField fx:id="optionalFilter" layoutX="388.0" layoutY="55.0" prefHeight="27.0" prefWidth="56.0" promptText="Доп." />
+    </children>
+</AnchorPane>
